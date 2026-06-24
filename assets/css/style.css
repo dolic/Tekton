@@ -164,22 +164,31 @@ section { padding-block: clamp(4rem, 8vw, 7rem); }
 }
 
 .nav-logo {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   line-height: 1;
+  gap: 0;
+  text-decoration: none;
 }
 .nav-logo .logo-name {
+  display: block;
   font-family: var(--font-display);
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: 700;
   color: var(--c-white);
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
+  background: var(--c-primary);
+  padding: 0.2em 0.45em 0.15em;
+  text-transform: uppercase;
 }
 .nav-logo .logo-sub {
-  font-size: 0.65rem;
-  letter-spacing: 0.2em;
+  display: block;
+  font-size: 0.55rem;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--c-fern-lt);
+  color: var(--c-white);
+  background: var(--c-fern);
+  padding: 0.25em 0.55em;
 }
 
 .nav-links {
