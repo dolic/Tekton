@@ -573,6 +573,98 @@ section { padding-block: clamp(4rem, 8vw, 7rem); }
 }
 
 /* =====================================================
+   CEO STRIP
+   ===================================================== */
+.ceo-strip {
+  background: var(--c-dark);
+  padding: 3rem 0;
+}
+
+.ceo-strip-inner {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.ceo-photo-wrap {
+  flex-shrink: 0;
+}
+
+.ceo-photo {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 3px solid var(--c-fern);
+  box-shadow: 0 0 0 6px rgba(90,122,80,0.18);
+}
+
+.ceo-text {
+  flex: 1;
+  min-width: 200px;
+}
+
+.ceo-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--c-fern-lt);
+  margin-bottom: 0.25rem;
+}
+
+.ceo-name {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--c-white);
+  margin-bottom: 0.5rem;
+}
+
+.ceo-quote {
+  font-size: 0.9rem;
+  color: rgba(250,247,241,0.65);
+  font-style: italic;
+  line-height: 1.6;
+  max-width: 420px;
+}
+
+.ceo-divider {
+  width: 1px;
+  height: 64px;
+  background: rgba(250,247,241,0.12);
+  flex-shrink: 0;
+}
+
+.ceo-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ceo-meta-item strong {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--c-white);
+}
+
+.ceo-meta-item span {
+  font-size: 0.75rem;
+  color: rgba(250,247,241,0.5);
+}
+
+@media (max-width: 640px) {
+  .ceo-divider { display: none; }
+  .ceo-meta { flex-direction: row; gap: 2rem; }
+  .ceo-strip-inner { gap: 1.5rem; }
+}
+
+/* =====================================================
    BENEFITS
    ===================================================== */
 .benefits { background: var(--c-bg-alt); }
