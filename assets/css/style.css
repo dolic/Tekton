@@ -189,6 +189,7 @@ section { padding-block: clamp(4rem, 8vw, 7rem); }
   color: var(--c-white);
   background: var(--c-fern);
   padding: 0.25em 0.55em;
+  text-align: center;
 }
 
 .nav-links {
